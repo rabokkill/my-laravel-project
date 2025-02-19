@@ -15,6 +15,10 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::get('/about_me', function () {
+    return view('about_me');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
