@@ -54,3 +54,9 @@ Route::patch('/modify-user/{id}', [UserController::class, 'modifyUser']);
 
 // DELETE Request
 Route::delete('/delete-user/{id}', [UserController::class, 'deleteUser']);
+
+
+/*------ PORTFOLIO ROUTES ------*/
+// Route::get('/', [PageController::class, 'home'])->name('home'); // Homepage
+Route::get('/skills', [PageController::class, 'skills'])->name('skills'); // Skills Page
+Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery'); // Gallery Page 
